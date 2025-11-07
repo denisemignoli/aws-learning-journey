@@ -1,0 +1,6 @@
+# Ignorar arquivos de sistema do macOS
+.DS_Store
+
+# Ignorar pasta de configuração do Obsidian
+.obsidian/
+
