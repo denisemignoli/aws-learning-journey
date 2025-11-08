@@ -1,7 +1,5 @@
 # 🚀 Minha Jornada de Aprendizado AWS
 
-![AWS Banner](https://user-images.githubusercontent.com/58767829/156517193-17728275-ad69-4315-a34f-45831667d979.png )
-
 ## 🎯 Objetivo
 
 Bem-vindo(a) ao meu repositório de estudos sobre o ecossistema da Amazon Web Services!
