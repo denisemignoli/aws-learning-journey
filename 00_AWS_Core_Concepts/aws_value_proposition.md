@@ -3,6 +3,13 @@ Computação em nuvem é a entrega **sob demanda** de capacidade de computação
 
 > A nuvem é composta por **computadores servidores em grandes data centers em diferentes locais ao redor do mundo**. Ao usar um serviço de nuvem, como a Amazon Web Services (AWS), você usa os computadores de propriedade da AWS.
 
+*Características*:
+
+- **Sob Demanda:** Recursos disponíveis em minutos com apenas alguns cliques.
+- **Acesso Global:** Entregue através de uma plataforma de serviços via internet.
+- **Pagamento Conforme o Uso:** Pague apenas pelo que consumir, sem custos iniciais elevados.
+- **Flexibilidade:** Trate a infraestrutura como software, permitindo mudanças rápidas e de baixo custo.
+
 ## Modelo de Computação Tradicional vs. Computação em Nuvem
 Para entender o valor da nuvem, é útil comparar os dois modelos:
 
