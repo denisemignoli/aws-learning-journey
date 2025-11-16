@@ -18,7 +18,7 @@ O exame é dividido em quatro domínios, cada um com um peso diferente na pontua
 
 ### Domínio 1: Conceitos da Nuvem (24%)
 - [ ] **1.1: Definir os benefícios da nuvem AWS.**
-  - [ ] Proposta de valor da AWS.
+  - [x] [Proposta de Valor da AWS](./00_AWS_Core_Concepts/aws_value_proposition.md)
   - [ ] Benefícios da infraestrutura global (alcance, velocidade).
   - [ ] Vantagens da alta disponibilidade, elasticidade e agilidade.
 - [ ] **1.2: Identificar os princípios de design da nuvem AWS.**
@@ -52,7 +52,7 @@ O exame é dividido em quatro domínios, cada um com um peso diferente na pontua
 - [ ] **3.1: Definir métodos de implantação e operação na nuvem.**
   - [ ] Acesso programático (CLI, SDKs) vs. Console.
   - [ ] Infraestrutura como Código (IaC) - CloudFormation.
-  - [ ] Modelos de implantação (Nuvem, Híbrido, On-premises).
+  - [x] [Modelos de Implantação de Nuvem (Cloud, Hybrid, On-Premises)](./00_AWS_Core_Concepts/cloud_deployment_models.md)
 - [ ] **3.2: Definir a infraestrutura global da AWS.**
   - [ ] Relação entre Regiões, Zonas de Disponibilidade (AZs) e Locais da Borda.
 - [ ] **3.3: Identificar os serviços computacionais da AWS.**

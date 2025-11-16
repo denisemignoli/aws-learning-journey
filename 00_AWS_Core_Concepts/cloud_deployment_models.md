@@ -1,5 +1,4 @@
-
-# Modelos de Implantação de Nuvem
+## Modelos de Implantação de Nuvem
 
 Os modelos de implantação definem **onde** sua infraestrutura e suas aplicações irão residir. Existem três modelos principais, cada um com suas próprias características e casos de uso.
 

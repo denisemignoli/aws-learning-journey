@@ -1,12 +1,12 @@
-# 🚀 Minha Jornada de Aprendizado AWS
+# Minha Jornada de Aprendizado AWS
 
-## 🎯 Objetivo
+## Objetivo
 
 Bem-vindo(a) ao meu repositório de estudos sobre o ecossistema da Amazon Web Services!
 
 Este espaço serve como uma base de conhecimento centralizada e um diário público da minha jornada, começando com a preparação para a certificação **AWS Certified Cloud Practitioner (CLF-C02)**. O objetivo é documentar, organizar e solidificar meu aprendizado sobre os principais serviços, conceitos de nuvem e melhores práticas da AWS.
 
-## 📂 Como este repositório está estruturado
+## Como este repositório está estruturado
 
 Para manter o conteúdo organizado e escalável para futuras certificações e estudos, adotei a seguinte estrutura de pastas:
 
@@ -45,7 +45,34 @@ aws-learning-journey/
 └── README.md
 
 ```
-## 🤝 Contribuição e feedback
+
+## Índice
+
+### Conceitos fundamentais
+
+*   [Proposta de Valor da AWS](./00_AWS_Core_Concepts/aws_value_proposition.md)
+*   [Modelos de Serviço de Nuvem (IaaS, PaaS, SaaS)](./00_AWS_Core_Concepts/cloud_computing_models.md)
+*   [Modelos de Implantação de Nuvem (Cloud, Hybrid, On-Premises)](./00_AWS_Core_Concepts/cloud_deployment_models.md)
+*   Benefícios da Nuvem - Elasticidade, Agilidade, etc.
+*   AWS Well-Architected Framework
+*   Modelo de Responsabilidade Compartilhada
+
+### Serviços AWS (Services)
+
+*   IAM - Identity and Access Management
+*   S3 - Simple Storage Service
+*   EC2 - Elastic Compute Cloud
+
+### Laboratórios Práticos (Labs)
+
+*   Hospedando um Site Estático no S3
+*   Lançando uma Instância EC2 com um Servidor Web
+
+---
+
+
+
+## Contribuição e feedback
 
 Este repositório é parte do meu processo de `learning in public`. Se você encontrar algum erro, tiver uma sugestão para melhorar as anotações ou simplesmente quiser discutir algum tópico, sinta-se à vontade para:
 
@@ -55,7 +82,7 @@ Este repositório é parte do meu processo de `learning in public`. Se você enc
 
 Toda interação é bem-vinda e ajuda a enriquecer esta base de conhecimento!
 
-## 🔗 Conecte-se comigo
+## Conecte-se comigo
 
 *   **LinkedIn:** [denisemignoli](https://www.linkedin.com/in/denisemignoli/)
 
