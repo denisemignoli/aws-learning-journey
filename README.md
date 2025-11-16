@@ -16,7 +16,7 @@ aws-learning-journey/
 ├── 00_AWS_Core_Concepts/       # Conceitos fundamentais
 │   ├── cloud_computing_models.md
 │   ├── shared_responsibility_model.md
-│   └── well_architected_framework.md
+│   └── ...
 │
 ├── 01_Services/                # O coração do repositório
 │   ├── IAM/
@@ -32,9 +32,7 @@ aws-learning-journey/
 │   └── ...
 │
 ├── 02_Labs/                    # Laboratórios
-│   ├── 11_introduction_to_amazon_ec2/
-│   │   ├── README.md
-│   │   └── ...
+│   ├── 11_introduction_to_amazon_ec2.md
 │   └── ...
 │
 ├── 03_Certifications/          # Notas específicas para cada prova
