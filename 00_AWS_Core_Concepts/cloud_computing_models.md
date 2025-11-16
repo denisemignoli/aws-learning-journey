@@ -51,3 +51,5 @@ Os serviços de nuvem são categorizados com base no nível de controle e respon
 
 > **Resumo SaaS:** O provedor (AWS ou outro) gerencia tudo. **Você apenas consome o serviço.**
 
+<hr>
+![Diagrama de Responsabilidades IaaS, PaaS, SaaS](https://github.com/user-attachments/assets/57623a37-4509-45a2-ae17-adf13709b4de)
