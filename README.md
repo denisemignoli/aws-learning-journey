@@ -51,7 +51,7 @@ aws-learning-journey/
 *   [Proposta de Valor da AWS](./00_AWS_Core_Concepts/aws_value_proposition.md)
 *   [Modelos de Serviço de Nuvem (IaaS, PaaS, SaaS)](./00_AWS_Core_Concepts/cloud_computing_models.md)
 *   [Modelos de Implantação de Nuvem (Cloud, Hybrid, On-Premises)](./00_AWS_Core_Concepts/cloud_deployment_models.md)
-*   Benefícios da Nuvem - Elasticidade, Agilidade, etc.
+*   [Benefícios da Nuvem - Elasticidade, Agilidade, etc.](/00_AWS_Core_Concepts/cloud_benefits.md)
 *   AWS Well-Architected Framework
 *   Modelo de Responsabilidade Compartilhada
 

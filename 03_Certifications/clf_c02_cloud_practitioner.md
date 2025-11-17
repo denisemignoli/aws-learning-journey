@@ -17,10 +17,10 @@ O exame é dividido em quatro domínios, cada um com um peso diferente na pontua
 ## ✅ Checklist
 
 ### Domínio 1: Conceitos da Nuvem (24%)
-- [ ] **1.1: Definir os benefícios da nuvem AWS.**
-  - [x] [Proposta de Valor da AWS](../00_AWS_Core_Concepts/aws_value_proposition.md)
-  - [ ] Benefícios da infraestrutura global (alcance, velocidade).
-  - [ ] Vantagens da alta disponibilidade, elasticidade e agilidade.
+- [x] **1.1: Definir os benefícios da nuvem AWS.**
+  - [x] [[aws_value_proposition|Proposta de valor da AWS]]. 
+  - [x] [[cloud_benefits|Benefícios da infraestrutura global (alcance, velocidade)]]. 
+  - [x] [[cloud_benefits|Vantagens da alta disponibilidade, elasticidade e agilidade]].
 - [ ] **1.2: Identificar os princípios de design da nuvem AWS.**
   - [ ] Conhecimento do [[00_AWS_Core_Concepts/well_architected_framework.md|AWS Well-Architected Framework]].
   - [ ] Compreensão e identificação dos 6 pilares do Framework.

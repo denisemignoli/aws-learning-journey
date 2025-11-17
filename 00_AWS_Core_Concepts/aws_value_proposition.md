@@ -32,3 +32,23 @@ Um dos benefícios financeiros mais significativos da nuvem é a mudança de um 
     
 
 Com a AWS, você para de gastar dinheiro com CAPEX (comprar servidores) e passa a gastar com OPEX (pagar uma "conta de luz" pelos recursos de computação que utiliza). Isso elimina a necessidade de grandes investimentos iniciais e permite que empresas de todos os tamanhos, incluindo startups, tenham acesso à mesma tecnologia de ponta que as grandes corporações.
+
+### Calculando a Economia Real: Custo Total de Propriedade (TCO)
+
+A mudança de CAPEX para OPEX resulta em uma redução significativa do **Custo Total de Propriedade (TCO)**. O TCO é uma análise financeira que ajuda a calcular a economia real de se mover para a AWS.
+
+Para isso, a AWS oferece a **Calculadora de Custo Total de Propriedade (TCO) da AWS**, que compara o custo de executar suas aplicações em um ambiente local (on-premises) versus na nuvem AWS.
+
+A calculadora leva em conta não apenas os custos diretos, mas também os **custos indiretos (ocultos)** da infraestrutura local, como:
+
+- **Custos do Data Center:**
+    - Eletricidade e refrigeração.
+    - Segurança física (câmeras, guardas).
+    - Manutenção do prédio e aluguel do espaço.
+- **Custos de Hardware e Software:**
+    - Compra e renovação de servidores, roteadores e switches.
+    - Licenças de software e sistemas operacionais.
+- **Custos de Pessoal:**
+    - Salários de administradores de rede, de sistemas e de segurança para manter a infraestrutura funcionando 24/7.
+
+Ao mover para a AWS, a maior parte desses custos é eliminada e substituída pela fatura mensal da AWS, que, devido à **economia de escala**, geralmente resulta em um TCO muito menor.
