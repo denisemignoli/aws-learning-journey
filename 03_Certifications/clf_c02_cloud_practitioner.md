@@ -18,11 +18,11 @@ O exame é dividido em quatro domínios, cada um com um peso diferente na pontua
 
 ### Domínio 1: Conceitos da Nuvem (24%)
 - [x] **1.1: Definir os benefícios da nuvem AWS.**
-  - [x] [[aws_value_proposition|Proposta de valor da AWS]]. 
-  - [x] [[cloud_benefits|Benefícios da infraestrutura global (alcance, velocidade)]]. 
-  - [x] [[cloud_benefits|Vantagens da alta disponibilidade, elasticidade e agilidade]].
+  - [x] [Proposta de valor da AWS](../00_AWS_Core_Concepts/aws_value_proposition.md). 
+  - [x] [Benefícios da infraestrutura global (alcance, velocidade)](../00_AWS_Core_Concepts/cloud_benefits.md). 
+  - [x] [Vantagens da alta disponibilidade, elasticidade e agilidade](../00_AWS_Core_Concepts/cloud_benefits.md).
 - [ ] **1.2: Identificar os princípios de design da nuvem AWS.**
-  - [ ] Conhecimento do [[00_AWS_Core_Concepts/well_architected_framework.md|AWS Well-Architected Framework]].
+  - [ ] Conhecimento do [AWS Well-Architected Framework](../00_AWS_Core_Concepts/well_architected_framework.md).
   - [ ] Compreensão e identificação dos 6 pilares do Framework.
 - [ ] **1.3: Compreender os benefícios e as estratégias de migração.**
   - [ ] Estratégias de adoção da nuvem (os "6 R's").
@@ -34,14 +34,14 @@ O exame é dividido em quatro domínios, cada um com um peso diferente na pontua
 
 ### Domínio 2: Segurança e Conformidade (30%)
 - [ ] **2.1: Compreender o modelo de responsabilidade compartilhada.**
-  - [ ] [[00_AWS_Core_Concepts/shared_responsibility_model.md |Shared Responsibility Model]].
+  - [ ] [Shared Responsibility Model](../00_AWS_Core_Concepts/shared_responsibility_model.md).
   - [ ] Descrever as responsabilidades do cliente e da AWS.
 - [ ] **2.2: Compreender os conceitos de segurança, governança e conformidade.**
   - [ ] Onde encontrar informações de conformidade (AWS Artifact).
   - [ ] Criptografia em trânsito e em repouso.
   - [ ] Serviços de auditoria e governança (CloudTrail, Config).
 - [ ] **2.3: Identificar os recursos de gerenciamento de acesso da AWS.**
-  - [ ] Conhecimento profundo de [[01_Services/IAM/README|IAM]].
+  - [ ] Conhecimento profundo de [IAM](../01_Services/IAM/README).
   - [ ] Importância de proteger a conta raiz (MFA).
   - [ ] Princípio de menor privilégio.
 - [ ] **2.4: Identificar os componentes e os recursos de segurança.**
@@ -56,7 +56,7 @@ O exame é dividido em quatro domínios, cada um com um peso diferente na pontua
 - [ ] **3.2: Definir a infraestrutura global da AWS.**
   - [ ] Relação entre Regiões, Zonas de Disponibilidade (AZs) e Locais da Borda.
 - [ ] **3.3: Identificar os serviços computacionais da AWS.**
-  - [ ] Conhecimento de [[01_Services/EC2/README|EC2]] e seus casos de uso.
+  - [ ] Conhecimento de [EC2](../01_Services/EC2/README) e seus casos de uso.
   - [ ] Opções de contêineres (ECS, EKS).
   - [ ] Computação sem servidor (Lambda).
 - [ ] **3.4: Identificar os serviços de banco de dados da AWS.**
@@ -66,7 +66,7 @@ O exame é dividido em quatro domínios, cada um com um peso diferente na pontua
   - [ ] Grupos de segurança vs. ACLs de rede.
   - [ ] Amazon Route 53.
 - [ ] **3.6: Identificar os serviços de armazenamento da AWS.**
-  - [ ] Conhecimento de [[01_Services/S3/README|S3]] e suas classes de armazenamento.
+  - [ ] Conhecimento de [S3](../01_Services/S3/README) e suas classes de armazenamento.
   - [ ] Armazenamento em bloco (EBS) vs. Arquivo (EFS).
 - [ ] **3.7 & 3.8: Identificar outros serviços importantes.**
   - [ ] Integração de aplicações (SQS, SNS).
