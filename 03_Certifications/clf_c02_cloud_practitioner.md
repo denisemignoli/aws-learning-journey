@@ -21,11 +21,12 @@ O exame é dividido em quatro domínios, cada um com um peso diferente na pontua
   - [x] [Proposta de valor da AWS](../00_AWS_Core_Concepts/aws_value_proposition.md). 
   - [x] [Benefícios da infraestrutura global (alcance, velocidade)](../00_AWS_Core_Concepts/cloud_benefits.md). 
   - [x] [Vantagens da alta disponibilidade, elasticidade e agilidade](../00_AWS_Core_Concepts/cloud_benefits.md).
+  - [x] [Modelos de serviço de nuvem (IaaS, PaaS, SaaS)](../00_AWS_Core_Concepts/cloud_computing_models.md).
 - [ ] **1.2: Identificar os princípios de design da nuvem AWS.**
-  - [ ] Conhecimento do [AWS Well-Architected Framework](../00_AWS_Core_Concepts/well_architected_framework.md).
+  - [x] Conhecimento do [AWS Well-Architected Framework](../00_AWS_Core_Concepts/well_architected_framework.md).
   - [ ] Compreensão e identificação dos 6 pilares do Framework.
 - [ ] **1.3: Compreender os benefícios e as estratégias de migração.**
-  - [ ] Estratégias de adoção da nuvem (os "6 R's").
+  - [x] [Estratégias de adoção da nuvem (os "6 R's")](../00_AWS_Core_Concepts/cloud_migration_strategies.md).
   - [ ] Conhecimento do AWS Cloud Adoption Framework (CAF).
 - [ ] **1.4: Compreender os conceitos dos aspectos econômicos da nuvem.**
   - [ ] Custos fixos vs. variáveis (CAPEX vs. OPEX).
@@ -52,9 +53,9 @@ O exame é dividido em quatro domínios, cada um com um peso diferente na pontua
 - [ ] **3.1: Definir métodos de implantação e operação na nuvem.**
   - [ ] Acesso programático (CLI, SDKs) vs. Console.
   - [ ] Infraestrutura como Código (IaC) - CloudFormation.
-  - [x] [Modelos de Implantação de Nuvem (Cloud, Hybrid, On-Premises)](../00_AWS_Core_Concepts/cloud_deployment_models.md)
+  - [x] [Modelos de implantação de nuvem (Cloud, Hybrid, On-Premises)](../00_AWS_Core_Concepts/cloud_deployment_models.md)
 - [ ] **3.2: Definir a infraestrutura global da AWS.**
-  - [ ] Relação entre Regiões, Zonas de Disponibilidade (AZs) e Locais da Borda.
+  - [ ] [Relação entre regiões, zonas de disponibilidade (AZs) e locais da borda](../00_AWS_Core_Concepts/infrastructure_overview.md).
 - [ ] **3.3: Identificar os serviços computacionais da AWS.**
   - [ ] Conhecimento de [EC2](../01_Services/EC2/README) e seus casos de uso.
   - [ ] Opções de contêineres (ECS, EKS).
