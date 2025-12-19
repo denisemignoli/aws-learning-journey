@@ -55,7 +55,7 @@ O exame é dividido em quatro domínios, cada um com um peso diferente na pontua
   - [ ] Infraestrutura como Código (IaC) - CloudFormation.
   - [x] [Modelos de implantação de nuvem (Cloud, Hybrid, On-Premises)](../00_AWS_Core_Concepts/cloud_deployment_models.md)
 - [ ] **3.2: Definir a infraestrutura global da AWS.**
-  - [ ] [Relação entre regiões, zonas de disponibilidade (AZs) e locais da borda](../00_AWS_Core_Concepts/infrastructure_overview.md).
+  - [x] [Relação entre regiões, zonas de disponibilidade (AZs) e locais da borda](../00_AWS_Core_Concepts/infrastructure_overview.md).
 - [ ] **3.3: Identificar os serviços computacionais da AWS.**
   - [ ] Conhecimento de [EC2](../01_Services/EC2/README) e seus casos de uso.
   - [ ] Opções de contêineres (ECS, EKS).
