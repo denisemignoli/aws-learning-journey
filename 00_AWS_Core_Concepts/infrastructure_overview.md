@@ -22,7 +22,7 @@
   - Isso permite que você escolha onde seus dados vão "morar", para cumprir com leis de soberania de dados.
 - **Comunicação**: A comunicação entre as Regiões acontece pela espinha dorsal da rede global da AWS, mas é mais lenta (maior latência) do que dentro da mesma Região. A replicação de dados entre Regiões não é automática; você precisa configurá-la explicitamente, geralmente para fins de Recuperação de Desastres.
 
-### Como escolher uma Região AWS?s
+### Como escolher uma Região AWS?
 A escolha da Região correta é uma decisão de design fundamental. Considere os seguintes fatores:
 - **Conformidade (Compliance)**: Governança de dados e requisitos legais. Os dados nunca saem de uma Região sem sua permissão explícita.
 - **Proximidade dos Clientes**: Para reduzir a latência e melhorar a experiência do usuário.
