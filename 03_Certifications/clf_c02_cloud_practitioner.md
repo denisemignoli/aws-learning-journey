@@ -24,7 +24,7 @@ O exame é dividido em quatro domínios, cada um com um peso diferente na pontua
   - [x] [Modelos de serviço de nuvem (IaaS, PaaS, SaaS)](../00_AWS_Core_Concepts/cloud_computing_models.md).
 - [ ] **1.2: Identificar os princípios de design da nuvem AWS.**
   - [x] Conhecimento do [AWS Well-Architected Framework](../00_AWS_Core_Concepts/well_architected_framework.md).
-  - [ ] Compreensão e identificação dos 6 pilares do Framework.
+  - [x] Compreensão e identificação dos 6 pilares do Framework.
 - [ ] **1.3: Compreender os benefícios e as estratégias de migração.**
   - [x] [Estratégias de adoção da nuvem (os "6 R's")](../00_AWS_Core_Concepts/cloud_migration_strategies.md).
   - [ ] Conhecimento do AWS Cloud Adoption Framework (CAF).
@@ -35,8 +35,8 @@ O exame é dividido em quatro domínios, cada um com um peso diferente na pontua
 
 ### Domínio 2: Segurança e Conformidade (30%)
 - [ ] **2.1: Compreender o modelo de responsabilidade compartilhada.**
-  - [ ] [Shared Responsibility Model](../00_AWS_Core_Concepts/shared_responsibility_model.md).
-  - [ ] Descrever as responsabilidades do cliente e da AWS.
+  - [x] [Shared Responsibility Model](../00_AWS_Core_Concepts/shared_responsibility_model.md).
+  - [x] Descrever as responsabilidades do cliente e da AWS.
 - [ ] **2.2: Compreender os conceitos de segurança, governança e conformidade.**
   - [ ] Onde encontrar informações de conformidade (AWS Artifact).
   - [ ] Criptografia em trânsito e em repouso.
