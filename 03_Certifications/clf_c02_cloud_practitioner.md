@@ -22,19 +22,19 @@ O exame é dividido em quatro domínios, cada um com um peso diferente na pontua
   - [x] [Benefícios da infraestrutura global (alcance, velocidade)](../00_AWS_Core_Concepts/cloud_benefits.md). 
   - [x] [Vantagens da alta disponibilidade, elasticidade e agilidade](../00_AWS_Core_Concepts/cloud_benefits.md).
   - [x] [Modelos de serviço de nuvem (IaaS, PaaS, SaaS)](../00_AWS_Core_Concepts/cloud_computing_models.md).
-- [ ] **1.2: Identificar os princípios de design da nuvem AWS.**
+- [x] **1.2: Identificar os princípios de design da nuvem AWS.**
   - [x] Conhecimento do [AWS Well-Architected Framework](../00_AWS_Core_Concepts/well_architected_framework.md).
   - [x] Compreensão e identificação dos 6 pilares do Framework.
-- [ ] **1.3: Compreender os benefícios e as estratégias de migração.**
+- [x] **1.3: Compreender os benefícios e as estratégias de migração.**
   - [x] [Estratégias de adoção da nuvem (os "6 R's")](../00_AWS_Core_Concepts/cloud_migration_strategies.md).
-  - [ ] Conhecimento do AWS Cloud Adoption Framework (CAF).
+  - [x] [Conhecimento do AWS Cloud Adoption Framework (CAF)](../00_AWS_Core_Concepts/cloud_migration_strategies.md).
 - [ ] **1.4: Compreender os conceitos dos aspectos econômicos da nuvem.**
   - [ ] Custos fixos vs. variáveis (CAPEX vs. OPEX).
   - [ ] Conceito de dimensionamento correto (*right sizing*).
   - [ ] Benefícios da automação e economia de custos.
 
 ### Domínio 2: Segurança e Conformidade (30%)
-- [ ] **2.1: Compreender o modelo de responsabilidade compartilhada.**
+- [x] **2.1: Compreender o modelo de responsabilidade compartilhada.**
   - [x] [Shared Responsibility Model](../00_AWS_Core_Concepts/shared_responsibility_model.md).
   - [x] Descrever as responsabilidades do cliente e da AWS.
 - [ ] **2.2: Compreender os conceitos de segurança, governança e conformidade.**
@@ -54,7 +54,7 @@ O exame é dividido em quatro domínios, cada um com um peso diferente na pontua
   - [ ] Acesso programático (CLI, SDKs) vs. Console.
   - [ ] Infraestrutura como Código (IaC) - CloudFormation.
   - [x] [Modelos de implantação de nuvem (Cloud, Hybrid, On-Premises)](../00_AWS_Core_Concepts/cloud_deployment_models.md)
-- [ ] **3.2: Definir a infraestrutura global da AWS.**
+- [x] **3.2: Definir a infraestrutura global da AWS.**
   - [x] [Relação entre regiões, zonas de disponibilidade (AZs) e locais da borda](../00_AWS_Core_Concepts/infrastructure_overview.md).
 - [ ] **3.3: Identificar os serviços computacionais da AWS.**
   - [ ] Conhecimento de [EC2](../01_Services/EC2/README) e seus casos de uso.
