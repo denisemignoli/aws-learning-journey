@@ -41,10 +41,10 @@ O exame é dividido em quatro domínios, cada um com um peso diferente na pontua
   - [ ] Onde encontrar informações de conformidade (AWS Artifact).
   - [ ] Criptografia em trânsito e em repouso.
   - [ ] Serviços de auditoria e governança (CloudTrail, Config).
-- [ ] **2.3: Identificar os recursos de gerenciamento de acesso da AWS.**
-  - [ ] Conhecimento profundo de [IAM](../01_Services/IAM/README).
-  - [ ] Importância de proteger a conta raiz (MFA).
-  - [ ] Princípio de menor privilégio.
+- [x] **2.3: Identificar os recursos de gerenciamento de acesso da AWS.**
+  - [x] Conhecimento profundo de [IAM](../01_Services/IAM.md).
+  - [x] Importância de proteger a conta raiz [(MFA)](../01_Services/IAM.md#autenticação-multifator-mfa).
+  - [x] [Princípio de menor privilégio](../01_Services/IAM.md#princípio-do-menor-privilégio).
 - [ ] **2.4: Identificar os componentes e os recursos de segurança.**
   - [ ] Serviços de segurança (AWS Shield, WAF, Inspector, GuardDuty).
   - [ ] AWS Trusted Advisor.

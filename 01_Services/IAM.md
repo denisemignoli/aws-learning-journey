@@ -1,0 +1,146 @@
+# AWS IAM: Identity and Access Management
+O IAM é o serviço que permite gerenciar o acesso aos serviços e recursos da AWS de forma segura. Com ele podemos criar e gerenciar usuários, grupos e usar permissões para permitir ou negar o acesso a recursos.
+
+O IAM é um **serviço global**, o que significa que usuários, grupos, funções e políticas são criados globalmente e não em uma região específica.
+
+## Índice
+1. [Componentes Principais: Usuários, Grupos e Funções](#1-componentes-principais-usuários-grupos-e-funções)
+2. [Políticas e Permissões](#2-políticas-e-permissões)
+   - [Estrutura de uma Policy](#estrutura-de-uma-policy)
+   - [Princípio do Menor Privilégio](#princípio-do-menor-privilégio)
+3. [Formas de Acesso e Autenticação](#3-formas-de-acesso-e-autenticação)
+   - [Política de Senhas](#política-de-senhas-iam-password-policy)
+   - [Autenticação Multifator (MFA)](#autenticação-multifator-mfa)
+4. [Melhores Práticas de Segurança do IAM](#4-melhores-práticas-de-segurança-do-iam)
+
+## 1. Componentes Principais: Usuários, Grupos e Funções
+O IAM opera com base em "identidades". As principais são:
+- **Usuário Raiz (Root User)**:
+  - É a identidade criada quando você abre sua conta AWS.
+  - Possui acesso total e irrestrito a todos os serviços e recursos.
+  - NÃO DEVE ser usado para tarefas diárias. Sua principal função é para o gerenciamento da conta e da cobrança.
+- **Usuários IAM (Users)**:
+  - Representam uma pessoa ou uma aplicação que precisa interagir com a AWS.
+  - Por padrão, um novo usuário IAM é criado sem nenhuma permissão.
+- **Grupos IAM (Groups)**:
+  - São coleções de usuários. A principal função de um grupo é simplificar o gerenciamento de permissões para um conjunto de usuários.
+  - Você anexa uma política de permissão a um grupo, e todos os usuários nesse grupo herdam essas permissões.
+  - **Importante**: Grupos só podem conter usuários, não outros grupos. Um usuário pode pertencer a múltiplos grupos. Um usuário não é obrigado a pertencer a um grupo.
+- **Funções IAM (Roles)**:
+  - São uma forma de delegar permissões para entidades confiáveis, sem a necessidade de compartilhar credenciais de longo prazo (chaves de acesso).
+  - Uma função é assumida temporariamente por uma identidade (um usuário, uma aplicação ou um serviço da AWS) para obter permissões.
+  - Exemplo de uso: Permitir que uma instância EC2 acesse um bucket S3 sem precisar armazenar chaves de acesso no código da aplicação.
+
+## 2. Políticas e Permissões
+As permissões são atribuídas a usuários ou grupos através de documentos JSON chamados **Policies**.
+- <u>O que é uma Policy?</u> É um documento que define explicitamente as permissões. Ele especifica o Efeito (Permitir/Negar), a Ação (qual operação, ex: s3:GetObject), o Recurso (em qual recurso, ex: um bucket S3 específico) e, opcionalmente, as Condições.
+### Estrutura de uma Policy
+Este documento JSON contém uma ou mais declarações (Statement). Cada declaração inclui:
+
+  - **Effect**: Define se o acesso será permitido (Allow) ou negado (Deny).
+  - **Action**: Lista de ações específicas que a política permite ou nega (ex: s3:GetObject).
+  - **Resource**: Lista de recursos específicos (identificados por ARNs) aos quais as ações se aplicam.
+
+    ```json
+    {
+    "Version": "2012-10-17",
+    "Id": "S3-Account-Permissions",
+    "Statement": [
+      {
+        "Sid": "1",
+        "Effect": "Allow",
+        "Principal": {
+          "AWS": ["arn:aws:iam::123456789012:root"]
+        },
+        "Action": [
+          "s3:GetObject",
+          "s3:PutObject"
+        ],
+        "Resource": ["arn:aws:s3:::mybucket/*"]
+      }
+    ]
+    }
+    ```
+
+### Princípio do Menor Privilégio
+  - Esta é a prática de segurança mais importante no IAM.
+  - Sempre conceda apenas as permissões mínimas necessárias para que uma identidade (usuário, função) possa realizar sua tarefa, e nada mais.
+
+
+## 3. Formas de Acesso e Autenticação
+
+Existem três maneiras principais de interagir com os serviços da AWS. Cada uma é adequada para diferentes casos de uso.
+
+| Forma de Acesso                  | Proteção / Credencial     | Uso Principal                                   |
+|----------------------------------|---------------------------|-------------------------------------------------|
+| AWS Management Console           | Senha + MFA               | Tarefas manuais e visualização rápida           |
+| AWS Command Line Interface (CLI) | Access Keys (ID e Secret) | Automação e scripts via terminal                |
+| AWS Software Developer Kit (SDK) | Access Keys (ID e Secret) | Integração direta dentro do código da aplicação |
+
+
+### **1. AWS Management Console**
+
+-   **O que é:** Uma interface gráfica baseada na web, ideal para visualizar recursos, gerenciar configurações e realizar tarefas de forma manual e intuitiva.
+-   **Autenticação:** Via usuário e senha, com a recomendação de uma camada extra de segurança através do MFA (Autenticação Multifator).
+    > #### 🛡️ Fortalecendo o Acesso ao Console
+    >
+    > #### Política de Senhas (IAM Password Policy)
+    > Permite definir regras de complexidade para as senhas (comprimento mínimo, tipos de caracteres, expiração, etc.) para evitar senhas fracas. Definir uma política forte é uma melhor prática de segurança fundamental.
+    >
+    > #### Autenticação Multifator (MFA)
+    > Adiciona uma segunda camada de verificação, tornando o acesso muito mais seguro. Mesmo que uma senha seja comprometida, o acesso não é concedido sem o segundo fator.
+    >  -   **Regra de Ouro:** Habilite o MFA para o **Usuário Raiz (Root User)** e para todos os usuários com privilégios administrativos.
+    >  -   **Tipos de MFA:** As opções incluem aplicativos de autenticação (como Microsoft Authenticator), chaves de segurança físicas (como YubiKey) e tokens de hardware.
+
+
+### **2. AWS Command Line Interface (CLI)**
+
+-   **O que é:** Uma ferramenta de linha de comando que permite controlar e automatizar serviços da AWS diretamente do seu terminal. É ideal para administradores de sistemas e para criar scripts de automação.
+-   **Autenticação:** Via Chaves de Acesso (Access Keys), que são um par de Access Key ID e Secret Access Key geradas no IAM.
+
+### **3. AWS Software Development Kits (SDKs)**
+
+-   **O que é:** Um conjunto de bibliotecas e ferramentas para diversas linguagens de programação (Python, Java, JavaScript, etc.). Os SDKs permitem que os desenvolvedores integrem e controlem os serviços da AWS diretamente de dentro do código de suas aplicações.
+- **Autenticação**: Também utiliza Chaves de Acesso (Access Keys). No entanto, a melhor prática para aplicações rodando na AWS (ex: em uma instância EC2) é usar Funções IAM (IAM Roles), que fornecem credenciais temporárias e mais seguras, eliminando a necessidade de armazenar chaves de acesso no código.
+
+## 4. Melhores Práticas de Segurança do IAM
+1. **Proteja sua Conta Raiz**: Nunca use o usuário raiz para tarefas diárias. Ative o MFA para ele e guarde as credenciais em um local seguro.
+2. **Use Usuários IAM Individuais**: Não compartilhe credenciais. Crie usuários IAM individuais para cada pessoa que precisa de acesso.
+3. **Use Grupos para Gerenciar Permissões**: Em vez de anexar políticas a usuários individuais, anexe-as a grupos e adicione os usuários aos grupos.
+4. **Aplique o Menor Privilégio**: Sempre comece com o mínimo de permissões e adicione mais conforme a necessidade.
+5. **Use Funções (Roles) para Aplicações e Serviços**: Prefira usar Funções IAM para dar permissões a instâncias EC2 e outros serviços, em vez de usar chaves de acesso.
+6. **Habilite o MFA**: Ative a Autenticação Multifator para todos os usuários, especialmente para os mais privilegiados.
+7. **Rotacione as Credenciais**: Troque senhas e chaves de acesso regularmente.
+
+<hr>
+
+
+<details>
+<summary><strong>📝 Passo a Passo: Criando um Usuário e Grupo no Console (Clique para expandir)</strong></summary>
+
+1.  **Navegue até o IAM:** No console da AWS, vá para o serviço **IAM**.
+
+2.  **Criar Usuário (Create User):**
+    *   **Nome de Usuário (User name):** Dê um nome ao usuário (ex: `denisemig`).
+    *   **Acesso ao Console (Provide user access to the AWS Management Console):** Marque esta opção.
+    *   **Senha (Console password):** Escolha "Autogenerated password" (senha autogerada) ou "Custom password" (senha customizada).
+    *   **Opcional:** Marque a opção para que o usuário precise criar uma nova senha no primeiro login.
+
+3.  **Definir Permissões (Set permissions):**
+    *   Escolha a opção **"Adicionar usuário ao grupo" (Add user to group)**.
+    *   Clique em **"Criar grupo" (Create group)**.
+
+4.  **Criar Grupo (Create group):**
+    *   **Nome do Grupo (User group name):** Dê um nome ao grupo (ex: `Developers`).
+    *   **Políticas de Permissão (Permission policies):** Pesquise e selecione as políticas necessárias. Por exemplo, para um desenvolvedor que precisa de acesso de leitura à maioria dos serviços, você pode anexar a política gerenciada pela AWS chamada **`ReadOnlyAccess`**.
+    *   Clique em **"Criar grupo de usuários" (Create user group)**.
+
+5.  **Revisar e Criar:**
+    *   De volta à tela de criação do usuário, o novo grupo `Developers` estará selecionado.
+    *   Avance para a tela de revisão.
+    *   Clique em **"Criar usuário" (Create user)**.
+
+**Resultado:** Você criou um usuário, um grupo, anexou uma política de permissões ao grupo e adicionou o usuário a esse grupo. O usuário `denisemig` agora tem as permissões de `ReadOnlyAccess`.
+
+</details>
+
