@@ -28,10 +28,10 @@ O exame é dividido em quatro domínios, cada um com um peso diferente na pontua
 - [x] **1.3: Compreender os benefícios e as estratégias de migração.**
   - [x] [Estratégias de adoção da nuvem (os "6 R's")](../00_AWS_Core_Concepts/cloud_migration_strategies.md).
   - [x] [Conhecimento do AWS Cloud Adoption Framework (CAF)](../00_AWS_Core_Concepts/cloud_migration_strategies.md).
-- [ ] **1.4: Compreender os conceitos dos aspectos econômicos da nuvem.**
-  - [ ] Custos fixos vs. variáveis (CAPEX vs. OPEX).
-  - [ ] Conceito de dimensionamento correto (*right sizing*).
-  - [ ] Benefícios da automação e economia de custos.
+- [x] **1.4: Compreender os conceitos dos aspectos econômicos da nuvem.**
+  - [x] [Custos fixos vs. variáveis (CAPEX vs. OPEX)](../00_AWS_Core_Concepts/aws_value_proposition.md#trocando-despesas-de-capital-capex-por-despesas-operacionais-opex).
+  - [x] [Conceito de dimensionamento correto (*right sizing*)](../00_AWS_Core_Concepts/aws_value_proposition.md#dimensionamento-correto-right-sizing).
+  - [x] Benefícios da automação e economia de custos.
 
 ### Domínio 2: Segurança e Conformidade (30%)
 - [x] **2.1: Compreender o modelo de responsabilidade compartilhada.**

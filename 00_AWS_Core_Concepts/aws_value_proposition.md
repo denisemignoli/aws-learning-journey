@@ -52,3 +52,12 @@ A calculadora leva em conta não apenas os custos diretos, mas também os **cust
     - Salários de administradores de rede, de sistemas e de segurança para manter a infraestrutura funcionando 24/7.
 
 Ao mover para a AWS, a maior parte desses custos é eliminada e substituída pela fatura mensal da AWS, que, devido à **economia de escala**, geralmente resulta em um TCO muito menor.
+
+### Dimensionamento correto (Right Sizing)
+O Right Sizing é o processo de revisar continuamente seus recursos de computação para garantir que eles tenham o tamanho ideal para a carga de trabalho atual.
+
+- **Por que é importante?** No modelo OPEX, você paga pelo que provisiona. Se você usa uma instância de servidor maior do que o necessário, está desperdiçando dinheiro.
+
+- **Como funciona**: Você analisa o desempenho (CPU, memória, rede) e ajusta o recurso para o menor tamanho possível que ainda mantenha a performance desejada.
+
+- **Relação com a Economia**: É o passo fundamental antes de considerar outras opções de economia, como Instâncias Reservadas ou Savings Plans.
