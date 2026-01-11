@@ -89,8 +89,27 @@ Existem três maneiras principais de interagir com os serviços da AWS. Cada uma
     >
     > #### Autenticação Multifator (MFA)
     > Adiciona uma segunda camada de verificação, tornando o acesso muito mais seguro. Mesmo que uma senha seja comprometida, o acesso não é concedido sem o segundo fator.
-    >  -   **Regra de Ouro:** Habilite o MFA para o **Usuário Raiz (Root User)** e para todos os usuários com privilégios administrativos.
-    >  -   **Tipos de MFA:** As opções incluem aplicativos de autenticação (como Microsoft Authenticator), chaves de segurança físicas (como YubiKey) e tokens de hardware.
+
+    > - **Regra de Ouro:** Habilite o MFA para o **Usuário Raiz (Root User)** e para todos os usuários com privilégios administrativos.
+    > 
+    > - **Tipos de MFA:** A AWS suporta vários tipos de dispositivos MFA para atender a diferentes necessidades de segurança e conveniência. Os principais são:
+
+    >> - **Dispositivo MFA Virtual (Virtual MFA Device)**:
+    <u>O que é</u>: Um aplicativo de software que gera códigos de acesso de uso único baseados em tempo (TOTP). É a opção mais comum e flexível.
+    <u>Como funciona</u>: Você instala um aplicativo em seu smartphone ou computador (como Google Authenticator, Microsoft Authenticator ou Authy).
+    <u>Ideal para</u>: A maioria dos usuários, pois não requer hardware adicional.
+    >>
+    >> - **Chave de Segurança U2F (Universal 2nd Factor)**:
+    <u>O que é</u>: Um dispositivo de hardware físico que você conecta à porta USB do seu computador.
+    <u>Como funciona</u>: Quando solicitado, você toca na chave para aprovar o login. Ele se comunica usando o padrão FIDO U2F.
+    <u>Exemplo</u>: Chaves da marca YubiKey.
+    Ideal para: Usuários que buscam uma segurança física mais robusta e uma experiência de login mais rápida (sem digitar códigos).
+    >>
+    >> - **Token de Hardware (Hardware Key Fob MFA Device)**:
+    <u>O que é</u>: Um pequeno dispositivo de hardware, semelhante a um chaveiro, que gera um código numérico de uso único.
+    <u>Como funciona</u>: Você pressiona um botão no dispositivo, e ele exibe um código de 6 dígitos em sua tela para você digitar no login.
+    <u>Exemplo</u>: Tokens da marca Gemalto.
+    Ideal para: Ambientes corporativos com requisitos de segurança rigorosos, onde a empresa fornece e gerencia os dispositivos de hardware para os funcionários.
 
 
 ### **2. AWS Command Line Interface (CLI)**
