@@ -9,8 +9,13 @@ O IAM é um **serviço global**, o que significa que usuários, grupos, funçõe
    - [Estrutura de uma Policy](#estrutura-de-uma-policy)
    - [Princípio do Menor Privilégio](#princípio-do-menor-privilégio)
 3. [Formas de Acesso e Autenticação](#3-formas-de-acesso-e-autenticação)
-   - [Política de Senhas](#política-de-senhas-iam-password-policy)
-   - [Autenticação Multifator (MFA)](#autenticação-multifator-mfa)
+    - [AWS Management Console](#1-aws-management-console)
+      - [Política de Senhas](#política-de-senhas-iam-password-policy)
+      - [Autenticação Multifator (MFA)](#autenticação-multifator-mfa)
+    - [AWS Command Line Interface (CLI)](#2-aws-command-line-interface-cli)
+      - [AWS CloudShell](#aws-cloudshell)
+    - [AWS Software Development Kits (SDKs)](#3-aws-software-development-kits-sdks)
+
 4. [Melhores Práticas de Segurança do IAM](#4-melhores-práticas-de-segurança-do-iam)
 
 ## 1. Componentes Principais: Usuários, Grupos e Funções
@@ -116,6 +121,15 @@ Existem três maneiras principais de interagir com os serviços da AWS. Cada uma
 
 -   **O que é:** Uma ferramenta de linha de comando que permite controlar e automatizar serviços da AWS diretamente do seu terminal. É ideal para administradores de sistemas e para criar scripts de automação.
 -   **Autenticação:** Via Chaves de Acesso (Access Keys), que são um par de Access Key ID e Secret Access Key geradas no IAM.
+
+> #### AWS CloudShell
+> Para usar a CLI, normalmente você precisa instalá-la em seu computador e configurar as Access Keys. No entanto, a AWS oferece uma maneira mais fácil e rápida de obter acesso a um terminal pré-configurado: o AWS CloudShell.
+> - O que é? O CloudShell é um terminal baseado em navegador, acessível diretamente do Console da AWS com um único clique.
+> - Como funciona? Ele já vem com a AWS CLI, o SDK e outras ferramentas essenciais pré-instaladas e, o mais importante, já está autenticado com as credenciais do usuário que está logado no console.
+> - Vantagens: Zero configuração. Não precisa instalar nada, nem gerenciar Access Keys localmente.
+> - Segurança: Usa as credenciais temporárias da sua sessão do console, o que é mais seguro do que armazenar chaves de longo prazo.
+> - Consistência: O ambiente é o mesmo para todos os usuários da conta.
+Em resumo, o CloudShell é a forma mais rápida e segura de executar comandos da CLI diretamente do seu navegador.
 
 ### **3. AWS Software Development Kits (SDKs)**
 
