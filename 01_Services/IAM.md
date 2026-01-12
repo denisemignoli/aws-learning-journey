@@ -88,12 +88,11 @@ Existem três maneiras principais de interagir com os serviços da AWS. Cada uma
 | AWS Software Developer Kit (SDK) | Access Keys (ID e Secret) | Integração direta dentro do código da aplicação |
 
 
-### **1. AWS Management Console**
+### **AWS Management Console**
 
 -   **O que é:** Uma interface gráfica baseada na web, ideal para visualizar recursos, gerenciar configurações e realizar tarefas de forma manual e intuitiva.
 -   **Autenticação:** Via usuário e senha, com a recomendação de uma camada extra de segurança através do MFA (Autenticação Multifator).
-    > #### 🛡️ Fortalecendo o Acesso ao Console
-    >
+
     > #### Política de Senhas (IAM Password Policy)
     > Permite definir regras de complexidade para as senhas (comprimento mínimo, tipos de caracteres, expiração, etc.) para evitar senhas fracas. Definir uma política forte é uma melhor prática de segurança fundamental.
     >
@@ -122,7 +121,7 @@ Existem três maneiras principais de interagir com os serviços da AWS. Cada uma
     Ideal para: Ambientes corporativos com requisitos de segurança rigorosos, onde a empresa fornece e gerencia os dispositivos de hardware para os funcionários.
 
 
-### **2. AWS Command Line Interface (CLI)**
+### **AWS Command Line Interface (CLI)**
 
 -   **O que é:** Uma ferramenta de linha de comando que permite controlar e automatizar serviços da AWS diretamente do seu terminal. É ideal para administradores de sistemas e para criar scripts de automação.
 -   **Autenticação:** Via Chaves de Acesso (Access Keys), que são um par de Access Key ID e Secret Access Key geradas no IAM.
@@ -136,7 +135,7 @@ Existem três maneiras principais de interagir com os serviços da AWS. Cada uma
 > - Consistência: O ambiente é o mesmo para todos os usuários da conta.
 Em resumo, o CloudShell é a forma mais rápida e segura de executar comandos da CLI diretamente do seu navegador.
 
-### **3. AWS Software Development Kits (SDKs)**
+### **AWS Software Development Kits (SDKs)**
 
 -   **O que é:** Um conjunto de bibliotecas e ferramentas para diversas linguagens de programação (Python, Java, JavaScript, etc.). Os SDKs permitem que os desenvolvedores integrem e controlem os serviços da AWS diretamente de dentro do código de suas aplicações.
 - **Autenticação**: Também utiliza Chaves de Acesso (Access Keys). No entanto, a melhor prática para aplicações rodando na AWS (ex: em uma instância EC2) é usar Funções IAM (IAM Roles), que fornecem credenciais temporárias e mais seguras, eliminando a necessidade de armazenar chaves de acesso no código.
@@ -168,7 +167,7 @@ Para ajudar a gerenciar e auditar a segurança da sua conta, o IAM fornece duas 
 
 
 <details>
-<summary><strong>📝 Passo a Passo: Criando um Usuário e Grupo no Console (Clique para expandir)</strong></summary>
+<summary><strong>Passo a Passo: Criando um Usuário e Grupo no Console (Clique para expandir)</strong></summary>
 
 1.  **Navegue até o IAM:** No console da AWS, vá para o serviço **IAM**.
 
