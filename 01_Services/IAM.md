@@ -16,7 +16,8 @@ O IAM é um **serviço global**, o que significa que usuários, grupos, funçõe
       - [AWS CloudShell](#aws-cloudshell)
     - [AWS Software Development Kits (SDKs)](#3-aws-software-development-kits-sdks)
 
-4. [Melhores Práticas de Segurança do IAM](#4-melhores-práticas-de-segurança-do-iam)
+4. [Ferramentas de Auditoria e Análise do IAM](#4-ferramentas-de-auditoria-e-análise-do-iam)
+5. [Melhores Práticas de Segurança do IAM](#5-melhores-práticas-de-segurança-do-iam)
 
 ## 1. Componentes Principais: Usuários, Grupos e Funções
 O IAM opera com base em "identidades". As principais são:
@@ -140,7 +141,21 @@ Em resumo, o CloudShell é a forma mais rápida e segura de executar comandos da
 -   **O que é:** Um conjunto de bibliotecas e ferramentas para diversas linguagens de programação (Python, Java, JavaScript, etc.). Os SDKs permitem que os desenvolvedores integrem e controlem os serviços da AWS diretamente de dentro do código de suas aplicações.
 - **Autenticação**: Também utiliza Chaves de Acesso (Access Keys). No entanto, a melhor prática para aplicações rodando na AWS (ex: em uma instância EC2) é usar Funções IAM (IAM Roles), que fornecem credenciais temporárias e mais seguras, eliminando a necessidade de armazenar chaves de acesso no código.
 
-## 4. Melhores Práticas de Segurança do IAM
+## 4. Ferramentas de Auditoria e Análise do IAM
+Para ajudar a gerenciar e auditar a segurança da sua conta, o IAM fornece duas ferramentas de análise importantes:
+1. **IAM Credentials Report (Relatório de Credenciais do IAM)**
+- O que é? Um relatório em nível de conta (account-level) que lista todos os usuários IAM da sua conta e o status de suas diversas credenciais.
+- Quais informações ele contém?
+  - Se as senhas estão ativas.
+  - Quando as senhas foram usadas pela última vez.
+  - Se as Access Keys (chaves de acesso) estão ativas.
+  - Quando as Access Keys foram usadas pela última vez.
+- Se o MFA (Autenticação Multifator) está ativado para o usuário.
+2. **IAM Access Advisor (Consultor de Acesso do IAM)**
+- O que é? Um recurso em nível de usuário, grupo ou role (user-level/identity-level) que mostra os serviços permitidos para aquela identidade e, mais importante, quando esses serviços foram acessados pela última vez.
+- Qual problema ele resolve? Ajuda a aplicar o Princípio do Menor Privilégio.
+
+## 5. Melhores Práticas de Segurança do IAM
 1. **Proteja sua Conta Raiz**: Nunca use o usuário raiz para tarefas diárias. Ative o MFA para ele e guarde as credenciais em um local seguro.
 2. **Use Usuários IAM Individuais**: Não compartilhe credenciais. Crie usuários IAM individuais para cada pessoa que precisa de acesso.
 3. **Use Grupos para Gerenciar Permissões**: Em vez de anexar políticas a usuários individuais, anexe-as a grupos e adicione os usuários aos grupos.
