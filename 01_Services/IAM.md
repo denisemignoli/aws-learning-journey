@@ -35,6 +35,10 @@ O IAM opera com base em "identidades". As principais são:
   - São uma forma de delegar permissões para entidades confiáveis, sem a necessidade de compartilhar credenciais de longo prazo (chaves de acesso).
   - Uma função é assumida temporariamente por uma identidade (um usuário, uma aplicação ou um serviço da AWS) para obter permissões.
   - Exemplo de uso: Permitir que uma instância EC2 acesse um bucket S3 sem precisar armazenar chaves de acesso no código da aplicação.
+  - Common roles:
+    - **EC2 Instance Roles**: Conceder permissões temporárias àquela instância EC2.
+    - **Lambda Function Roles**: Conceder à sua função Lambda as permissões necessárias para interagir com outros serviços da AWS (por exemplo, escrever logs no CloudWatch ou ler de uma tabela DynamoDB).
+    - **Roles for CloudFormation**: Conceder ao CloudFormation as permissões necessárias para criar, modificar ou deletar os recursos da AWS que estão definidos no seu template. Se o seu template precisa criar uma instância EC2 e um bucket S3, a role do CloudFormation precisa ter permissão para fazer isso.
 
 ## 2. Políticas e Permissões
 As permissões são atribuídas a usuários ou grupos através de documentos JSON chamados **Policies**.
