@@ -1,6 +1,7 @@
+Tags: #aws/dominio1 #cloud/beneficios #infra/elasticidade #infra/disponibilidade #agilidade/velocidade #escopo/global
 # Principais Benefícios da Nuvem AWS
 
-A nuvem AWS oferece um conjunto de vantagens que transformam a maneira como as aplicações são construídas e operadas. Enquanto os **benefícios financeiros** (como a troca de CAPEX por OPEX e a redução do TCO) são detalhados na nota sobre a [Proposta de Valor da AWS](./aws_value_proposition.md), este documento foca nos principais **benefícios técnicos**:
+A nuvem AWS oferece um conjunto de vantagens que transformam a maneira como as aplicações são construídas e operadas. Enquanto os **benefícios financeiros** (como a troca de CAPEX por OPEX e a redução do TCO) são detalhados na nota sobre a [Proposta de Valor da AWS](aws_value_proposition.md), este documento foca nos principais **benefícios técnicos**:
 
 ---
 

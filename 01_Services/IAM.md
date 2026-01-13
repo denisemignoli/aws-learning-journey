@@ -1,7 +1,8 @@
+Tags: #iam #aws/dominio2 #aws/seguranca #escopo/global #principio/menor-privilegio
 # AWS IAM: Identity and Access Management
 O IAM é o serviço que permite gerenciar o acesso aos serviços e recursos da AWS de forma segura. Com ele podemos criar e gerenciar usuários, grupos e usar permissões para permitir ou negar o acesso a recursos.
 
-O IAM é um **serviço global**, o que significa que usuários, grupos, funções e políticas são criados globalmente e não em uma região específica.
+> [!IMPORTANT] O IAM é um **serviço global**, o que significa que usuários, grupos, funções e políticas são criados globalmente e não em uma região específica.
 
 ## Índice
 1. [Componentes Principais: Usuários, Grupos e Funções](#1-componentes-principais-usuários-grupos-e-funções)

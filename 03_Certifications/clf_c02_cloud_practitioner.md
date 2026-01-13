@@ -18,33 +18,33 @@ O exame é dividido em quatro domínios, cada um com um peso diferente na pontua
 
 ### Domínio 1: Conceitos da Nuvem (24%)
 - [x] **1.1: Definir os benefícios da nuvem AWS.**
-  - [x] [Proposta de valor da AWS](../00_AWS_Core_Concepts/aws_value_proposition.md). 
-  - [x] [Benefícios da infraestrutura global (alcance, velocidade)](../00_AWS_Core_Concepts/cloud_benefits.md). 
-  - [x] [Vantagens da alta disponibilidade, elasticidade e agilidade](../00_AWS_Core_Concepts/cloud_benefits.md).
-  - [x] [Modelos de serviço de nuvem (IaaS, PaaS, SaaS)](../00_AWS_Core_Concepts/cloud_computing_models.md).
+  - [x] [Proposta de valor da AWS](aws_value_proposition.md). 
+  - [x] [Benefícios da infraestrutura global (alcance, velocidade)](cloud_benefits.md). 
+  - [x] [Vantagens da alta disponibilidade, elasticidade e agilidade](cloud_benefits.md).
+  - [x] [Modelos de serviço de nuvem (IaaS, PaaS, SaaS)](cloud_computing_models.md).
 - [x] **1.2: Identificar os princípios de design da nuvem AWS.**
-  - [x] Conhecimento do [AWS Well-Architected Framework](../00_AWS_Core_Concepts/well_architected_framework.md).
+  - [x] Conhecimento do [AWS Well-Architected Framework](well_architected_framework.md).
   - [x] Compreensão e identificação dos 6 pilares do Framework.
 - [x] **1.3: Compreender os benefícios e as estratégias de migração.**
-  - [x] [Estratégias de adoção da nuvem (os "6 R's")](../00_AWS_Core_Concepts/cloud_migration_strategies.md).
-  - [x] [Conhecimento do AWS Cloud Adoption Framework (CAF)](../00_AWS_Core_Concepts/cloud_migration_strategies.md).
+  - [x] [Estratégias de adoção da nuvem (os "6 R's")](cloud_migration_strategies.md).
+  - [x] [Conhecimento do AWS Cloud Adoption Framework (CAF)](cloud_migration_strategies.md).
 - [x] **1.4: Compreender os conceitos dos aspectos econômicos da nuvem.**
-  - [x] [Custos fixos vs. variáveis (CAPEX vs. OPEX)](../00_AWS_Core_Concepts/aws_value_proposition.md#trocando-despesas-de-capital-capex-por-despesas-operacionais-opex).
-  - [x] [Conceito de dimensionamento correto (*right sizing*)](../00_AWS_Core_Concepts/aws_value_proposition.md#dimensionamento-correto-right-sizing).
+  - [x] [Custos fixos vs. variáveis (CAPEX vs. OPEX)](aws_value_proposition.md#trocando-despesas-de-capital-capex-por-despesas-operacionais-opex).
+  - [x] [Conceito de dimensionamento correto (*right sizing*)](aws_value_proposition.md#dimensionamento-correto-right-sizing).
   - [x] Benefícios da automação e economia de custos.
 
 ### Domínio 2: Segurança e Conformidade (30%)
 - [x] **2.1: Compreender o modelo de responsabilidade compartilhada.**
-  - [x] [Shared Responsibility Model](../00_AWS_Core_Concepts/shared_responsibility_model.md).
+  - [x] [Shared Responsibility Model](shared_responsibility_model.md).
   - [x] Descrever as responsabilidades do cliente e da AWS.
 - [ ] **2.2: Compreender os conceitos de segurança, governança e conformidade.**
   - [ ] Onde encontrar informações de conformidade (AWS Artifact).
   - [ ] Criptografia em trânsito e em repouso.
   - [ ] Serviços de auditoria e governança (CloudTrail, Config).
 - [x] **2.3: Identificar os recursos de gerenciamento de acesso da AWS.**
-  - [x] Conhecimento profundo de [IAM](../01_Services/IAM.md).
-  - [x] Importância de proteger a conta raiz [(MFA)](../01_Services/IAM.md#autenticação-multifator-mfa).
-  - [x] [Princípio de menor privilégio](../01_Services/IAM.md#princípio-do-menor-privilégio).
+  - [x] Conhecimento profundo de [IAM](IAM.md).
+  - [x] Importância de proteger a conta raiz [(MFA)](IAM.md#autenticação-multifator-mfa).
+  - [x] [Princípio de menor privilégio](IAM.md#princípio-do-menor-privilégio).
 - [ ] **2.4: Identificar os componentes e os recursos de segurança.**
   - [ ] Serviços de segurança (AWS Shield, WAF, Inspector, GuardDuty).
   - [ ] AWS Trusted Advisor.
@@ -53,9 +53,9 @@ O exame é dividido em quatro domínios, cada um com um peso diferente na pontua
 - [ ] **3.1: Definir métodos de implantação e operação na nuvem.**
   - [ ] Acesso programático (CLI, SDKs) vs. Console.
   - [ ] Infraestrutura como Código (IaC) - CloudFormation.
-  - [x] [Modelos de implantação de nuvem (Cloud, Hybrid, On-Premises)](../00_AWS_Core_Concepts/cloud_deployment_models.md)
+  - [x] [Modelos de implantação de nuvem (Cloud, Hybrid, On-Premises)](cloud_deployment_models.md)
 - [x] **3.2: Definir a infraestrutura global da AWS.**
-  - [x] [Relação entre regiões, zonas de disponibilidade (AZs) e locais da borda](../00_AWS_Core_Concepts/infrastructure_overview.md).
+  - [x] [Relação entre regiões, zonas de disponibilidade (AZs) e locais da borda](infrastructure_overview.md).
 - [ ] **3.3: Identificar os serviços computacionais da AWS.**
   - [ ] Conhecimento de [EC2](../01_Services/EC2/README) e seus casos de uso.
   - [ ] Opções de contêineres (ECS, EKS).

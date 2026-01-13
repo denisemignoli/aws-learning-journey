@@ -1,3 +1,4 @@
+Tags: #aws/dominio1 #nuvem/beneficios #cloud/economia #finanças/opex #ferramenta/tco #otimizacao/right-sizing
 ## O que é computação em nuvem?
 Computação em nuvem é a entrega **sob demanda** de capacidade de computação, banco de dados, armazenamento, aplicativos e outros recursos de TI. Esses recursos são entregues por meio de uma plataforma de serviços de nuvem via Internet, com **pagamento conforme o uso**.
 
