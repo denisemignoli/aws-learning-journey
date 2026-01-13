@@ -67,6 +67,34 @@ Ao criar uma instância EC2, você precisa definir uma série de opções que de
 
 ## 2. Conceitos Fundamentais do EC2
 
+### Dados do Usuário (EC2 User Data)
+
+O EC2 User Data é um recurso que permite passar um script para a sua instância, que será executado automaticamente na primeira vez que ela for iniciada.
+
+- **O que é Bootstrapping?** O termo "bootstrapping" refere-se a esse processo de executar comandos de inicialização para configurar uma máquina quando ela "acorda" pela primeira vez.
+    
+- **Execução Única:** É fundamental entender que o script do User Data é executado **apenas uma vez, na primeira inicialização (first start)** da instância. Se você parar (stop) e iniciar (start) a instância novamente, o script **não** será executado de novo.
+    
+- **Casos de Uso Comuns:** O User Data é usado para automatizar tarefas de inicialização, como:
+    
+    - Instalar atualizações de segurança (`yum update -y`).
+    - Instalar software (ex: um servidor web como Apache ou Nginx).
+    - Baixar arquivos comuns da internet (ex: o código-fonte da sua aplicação).
+    - Qualquer outra tarefa de configuração que você queira automatizar.
+- **Permissões de Execução:** O script do EC2 User Data é executado com as permissões do **usuário root**, o que significa que ele tem privilégios totais para instalar softwares e modificar configurações no sistema.
+    
+
+**Exemplo Prático (para uma AMI Linux):** Ao configurar sua instância, você pode inserir o seguinte script no campo "User Data" para instalar um servidor web Apache:
+
+``` bash
+yum update -y
+yum install -y httpd
+systemctl start httpd
+systemctl enable httpd
+```
+
+Este script simples atualiza o sistema, instala o Apache, inicia o serviço e o configura para iniciar automaticamente no boot.
+
 ### AMI (Amazon Machine Image)
 
 - **O que é?** Uma AMI é um **template** que contém a configuração de software (sistema operacional, servidor de aplicação e aplicações) necessária para iniciar sua instância. É como uma "imagem de disco" ou um "molde" para suas instâncias.
